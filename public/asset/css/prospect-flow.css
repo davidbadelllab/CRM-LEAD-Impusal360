@@ -1,0 +1,118 @@
+/**
+ * Prospect Flow CRM
+ */
+:root {
+    --red: #F94144;
+    --orange: #F3722C;
+    --light-orange: #F8961E;
+    --yellow: #F9C74F;
+    --green: #90BE6D;
+    --light-green: #43AA8B;
+    --blue: #577590;
+    --dark-blue: #023047;
+}
+
+body {
+ background-color: #e5e9eb;
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.navbar-brand .logo {
+    max-height: 30px;
+}
+
+.nav-pills .nav-item {
+    --bs-nav-pills-link-active-bg: #284B63 !important;
+    padding: 4px;
+}
+/* animation */
+.animation-blink {
+    -webkit-animation: blink 2s infinite;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.notification-badge {
+    width: 10px;
+    height: 10px;
+    background: #d6293e;
+    border-radius: 50%;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    z-index: 1;
+}
+
+/* EAN-13 */
+.barcode {
+  font-family: 'Libre Barcode EAN13 Text', cursive;
+  font-size: 5em;
+}
+
+/*
+https://coolors.co/palette/f94144-f3722c-f8961e-f9c74f-90be6d-43aa8b-577590
+*/
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-orange {
+    background-color: var(--orange);
+}
+
+.bg-light-orange {
+    background-color: var(--light-orange);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-dark-blue {
+    background-color: var(--dark-blue);
+}
+
+.sidebar{
+    width: 4.5rem;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s;
+    transition-property: width;
+    margin-top: 4.5rem;
+}
+
+.sidebar:hover{
+    width: 15rem !important;
+}
+
+.sidebar span{
+    display: none;
+}
+
+.sidebar:hover span{
+    display: block;
+}
+
+.tiktok, .tiktok svg {
+    height: 18px;
+    top: -3px;
+    position: relative;
+}
